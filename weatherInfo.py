@@ -3,7 +3,7 @@ import requests
 class weatherinfo:
     def __init__(self,city):
         self.city = city
-        self.api = "http://api.openweathermap.org/data/2.5/weather?q=" + self.city + "&appid=1ab2ff5d58fef6e31da66ca9b0c71998"
+        self.api = "http://api.openweathermap.org/data/2.5/weather?q=" + self.city + #need key here
         self.json_data = requests.get(self.api).json()
 
     def toString(self):
